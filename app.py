@@ -14,8 +14,8 @@ app = Flask(__name__)
 
 # Load data
 def load_data():
-    movies = pickle.load(open("movies_list.pkl", 'rb'))
-    similarity = pickle.load(open("similarity.pkl", 'rb'))
+    movies = pickle.load(open("./movies_list.pkl", 'rb'))
+    similarity = pickle.load(open("./similarity.pkl", 'rb'))
     return movies, similarity
 
 movies, similarity = load_data()
