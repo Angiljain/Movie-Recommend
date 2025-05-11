@@ -1,8 +1,14 @@
 # app.py
 from flask import Flask, render_template, request, jsonify
+from dotenv import load_dotenv
+load_dotenv()
 import pickle
 import requests
 import os
+
+import os
+api_key = os.getenv("TMDB_API_KEY")
+secret = os.getenv("SECRET_KEY")
 
 app = Flask(__name__)
 
